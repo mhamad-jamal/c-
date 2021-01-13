@@ -6,14 +6,14 @@ namespace c_
     {
         static void Main(string[] args)
         {
-       Console.WriteLine("\nWhat is your born Year ? ");
+       Console.WriteLine("\n how old are you ? ");
 var input = Console.ReadLine();
-var born = Int32.Parse(input);
+var age = Int32.Parse(input);
 var dateAndTime = DateTime.Now;
 var date = dateAndTime.Year;
-var age =  date - born;
+var born =  date - age;
 
-Console.WriteLine($"\nyou are  {age}  year old");
+Console.WriteLine($"\n you are born on {born }");
 Console.Write("\nPress any key to exit...");
 Console.ReadKey(true);
         }
